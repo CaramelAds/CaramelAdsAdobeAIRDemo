@@ -12,21 +12,21 @@ Version 9.5.0
 - Adobe AIR 32
 
 ## <a id="installation"> Установка
-1)Скачайте файл [caramel.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/library/caramel.ane "caramel.ane")  в папку для расширений вашего проекта
+1) Скачайте файл [caramel.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/library/caramel.ane "caramel.ane")  в папку для расширений вашего проекта
 
-2)Добавьте ANE в ваш проект и убедитесь, что ваше IDE видит его.
+2) Добавьте ANE в ваш проект и убедитесь, что ваше IDE видит его.
 
 Если следующее не было добавлено автоматически, то добавьте его в APP_NAME-app.xml
 ```
 <extensions> 
-	<extensionID>com.caramelads.Caramel</extensionID>
+     <extensionID>com.caramelads.Caramel</extensionID>
 </extensions>
 ```
-3)в файле APP_NAME-app.xml найдите секцию
+3) в файле APP_NAME-app.xml найдите секцию
 
 ```
 <android>
-		<manifestAdditions><![CDATA[
+   <manifestAdditions><![CDATA[
 ```
 и внее добавьте следующий код
 
