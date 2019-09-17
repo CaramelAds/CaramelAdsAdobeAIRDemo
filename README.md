@@ -14,7 +14,7 @@ Version 9.5.0
 ## <a id="installation"> Установка
 1) Скачайте файл [caramel.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/library/caramel.ane "caramel.ane")  в папку для расширений вашего проекта
 
-2) Добавьте ANE в ваш проект и убедитесь, что ваше IDE видит его.
+2) Добавьте ANE в ваш проект и убедитесь, что ваша IDE видит его.
 
 Если следующее не было добавлено автоматически, то добавьте его в APP_NAME-app.xml
 ```
