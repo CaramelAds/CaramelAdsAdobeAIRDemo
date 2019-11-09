@@ -18,8 +18,7 @@
 	<initialWindow>
 		<!-- The main SWF or HTML file of the application. Required. -->
 		<!-- Note: In Flash Builder, the SWF reference is set automatically. -->
-		<content>[This value will be overwritten by Flash Builder in the
-			output app.xml]</content>
+		<content>CaramelAdsAdobeAIRDemo.swf</content>
 
 		<!-- The title of the main window. Optional. -->
 		<!-- <title></title> -->
@@ -221,11 +220,18 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    
-    <application     android:allowBackup="true" android:hardwareAccelerated="true" android:supportsRtl="true" android:usesCleartextTraffic="true"> 
-    
-    
-                 <!--Это значение переменной должно быть при подключении 15й версии адмоба актуально для Local и Manager сборок      -->
+
+    <application   android:allowBackup="true" android:hardwareAccelerated="true" android:supportsRtl="true" android:usesCleartextTraffic="true">
+
+         <activity android:name="com.caramelads.internal.consent.ConsentActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.caramelads.internal.consent.PartnersActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.caramelads.CaramelAdsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+
         <meta-data android:name="com.google.android.gms.version" android:value="12451000"/>
 
         <!--admob -->
@@ -329,7 +335,7 @@
             android:hardwareAccelerated="false"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
     </application>
-    
+
 
 			</manifest>
 			
