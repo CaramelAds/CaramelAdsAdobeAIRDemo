@@ -143,7 +143,7 @@ and add following code in it
    
  ```
 4) The download file [mraid.js](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/app/src/mraid.js "mraid.js") 
-and place it in folder together with APP_NAME-app.xml
+and put it in the root. Please, make sure that "mraid.js " in placed in "assets" folder after compilation
 
 ========================================================================================================================================
 
