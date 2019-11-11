@@ -4,7 +4,7 @@ ENG VERSION
 
 # Caramel Adobe Air extension 
 
-Version 9.5.0
+Version 9.6.0
 
 ## <a id="supported-platforms"> Supported platforms
 
@@ -42,6 +42,18 @@ and add following code in it
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     
     <application     android:allowBackup="true" android:hardwareAccelerated="true" android:supportsRtl="true" android:usesCleartextTraffic="true"> 
+    
+       <activity android:name="com.caramelads.internal.consent.ConsentActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.caramelads.internal.consent.PartnersActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.caramelads.CaramelAdsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+    
+    
+    
+    
        <meta-data android:name="com.google.android.gms.version" android:value="12451000"/>
        <activity android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
@@ -139,7 +151,7 @@ RUS VERSION
 
 # Caramel Adobe Air extension 
 
-Version 9.5.0
+Version 9.6.0
 
 ## <a id="supported-platforms"> Поддерживаемые платформы
 
@@ -178,6 +190,16 @@ Version 9.5.0
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     
     <application     android:allowBackup="true" android:hardwareAccelerated="true" android:supportsRtl="true" android:usesCleartextTraffic="true"> 
+    
+        <activity android:name="com.caramelads.internal.consent.ConsentActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.caramelads.internal.consent.PartnersActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.caramelads.CaramelAdsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+    
+    
        <meta-data android:name="com.google.android.gms.version" android:value="12451000"/>
        <activity android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
@@ -266,4 +288,4 @@ Version 9.5.0
     </application>
    
  ```
-4) Затем скачайте файл [mraid.js](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/app/src/mraid.js "mraid.js") и поместите его в папку вместе с APP_NAME-app.xml
+4) Затем скачайте файл [mraid.js](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/app/src/mraid.js "mraid.js") и поместите его в корень. Необходимо, что бы файл "mraid.js" после компиляции оказался в папке "assets" 
