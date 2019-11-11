@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <application xmlns="http://ns.adobe.com/air/application/32.0">
 
-	<id>App2Eleven.SokobanLogicPuzzlesGames</id>
+	<id>com.smaato.only</id>
 
 	<!-- Used as the filename for the application. Required. -->
 	<filename>CaramelAdsAdobeAIRDemo</filename>
