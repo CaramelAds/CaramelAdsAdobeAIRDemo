@@ -2,7 +2,7 @@ ENG version / RUS версия ниже
 
 ENG VERSION
 
-# Caramel Adobe Air extension 
+# Caramel Adobe Air extension. 
 
 Version 9.6.0
 
