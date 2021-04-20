@@ -4,7 +4,7 @@ ENG VERSION
 
 # Caramel Adobe Air extension. 
 
-Version 9.6.0
+Version 9.18.0
 
 ## <a id="supported-platforms"> Supported platforms
 
@@ -15,7 +15,7 @@ Version 9.6.0
 - Adobe AIR 32
 
 ## <a id="installation"> Installation
-1) Download file [caramel.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/library/caramel.ane "carame l.ane")  in your project's extensions folder 
+1) Download file [Caramel.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/library/caramel.ane "carame l.ane")  in your project's extensions folder 
      
 2) Add ANE in your project and ensure that your IDE sees it.
 
