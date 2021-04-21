@@ -71,7 +71,7 @@ package
 			stage.addChild(showButtonText);
 			
 			
-			// CREATE CARAMEL OBKEVC AND THEN INIT	
+			// CREATE CARAMEL OBJECT AND THEN INIT	
 			c = new Caramel();
 			c.initialize();					
 					

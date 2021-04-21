@@ -41,28 +41,25 @@ and add following code in it
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
-    <application   android:allowBackup="true" android:hardwareAccelerated="true" android:supportsRtl="true" android:usesCleartextTraffic="true">
+    <application   
+        android:allowBackup="true" android:hardwareAccelerated="true" android:supportsRtl="true" android:usesCleartextTraffic="true">
 
          <activity android:name="com.caramelads.internal.consent.ConsentActivity"
             android:screenOrientation="portrait" />
+
         <activity android:name="com.caramelads.internal.consent.PartnersActivity"
             android:screenOrientation="portrait" />
-
+        
         <activity android:name="com.caramelads.CaramelAdsActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
-
         <meta-data android:name="com.google.android.gms.version" android:value="12451000"/>
-
-        
 
         <!--Include the AdActivity configChanges and theme. -->
         <activity android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
-
-        
-
+    
         <activity
             android:name="com.mopub.mobileads.MoPubActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />
@@ -79,42 +76,10 @@ and add following code in it
             android:name="com.mopub.mobileads.RewardedMraidActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />
 
-
-    
-
-        <activity
-            android:name="com.aiming.mdt.adt.video.VideoActivity"
-            android:configChanges="keyboardHidden|screenSize|orientation"
-            android:launchMode="singleTask"
-            android:screenOrientation="user"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-        <activity
-            android:name="com.aiming.mdt.adt.interstitial.InterstitialActivity"
-            android:configChanges="keyboardHidden|screenSize|orientation"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-        <activity
-            android:name="com.aiming.mdt.adt.interactive.InteractiveActivity"
-            android:configChanges="keyboardHidden|screenSize|orientation"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-        <activity
-            android:name="com.aiming.mdt.adt.AdtActivity"
-            android:configChanges="keyboardHidden|screenSize"
-            android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Mopub 9.0崩溃适配 -->
-        <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" />
-
-
         <activity android:name="com.inmobi.ads.rendering.InMobiAdActivity"
             android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize" 
             android:theme="@android:style/Theme.Translucent.NoTitleBar" 
             android:hardwareAccelerated="true" />
-
 
         <activity
             android:name="com.unity3d.services.ads.adunit.AdUnitActivity"
@@ -186,27 +151,24 @@ Version 9.18.0
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
-    <application   android:allowBackup="true" android:hardwareAccelerated="true" android:supportsRtl="true" android:usesCleartextTraffic="true">
+    <application   
+        android:allowBackup="true" android:hardwareAccelerated="true" android:supportsRtl="true" android:usesCleartextTraffic="true">
 
          <activity android:name="com.caramelads.internal.consent.ConsentActivity"
             android:screenOrientation="portrait" />
+
         <activity android:name="com.caramelads.internal.consent.PartnersActivity"
             android:screenOrientation="portrait" />
 
         <activity android:name="com.caramelads.CaramelAdsActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
-
         <meta-data android:name="com.google.android.gms.version" android:value="12451000"/>
-
-        
-
+    
         <!--Include the AdActivity configChanges and theme. -->
         <activity android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-            android:theme="@android:style/Theme.Translucent" />
-
-        
+            android:theme="@android:style/Theme.Translucent" />        
 
         <activity
             android:name="com.mopub.mobileads.MoPubActivity"
@@ -224,42 +186,10 @@ Version 9.18.0
             android:name="com.mopub.mobileads.RewardedMraidActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />
 
-
-    
-
-        <activity
-            android:name="com.aiming.mdt.adt.video.VideoActivity"
-            android:configChanges="keyboardHidden|screenSize|orientation"
-            android:launchMode="singleTask"
-            android:screenOrientation="user"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-        <activity
-            android:name="com.aiming.mdt.adt.interstitial.InterstitialActivity"
-            android:configChanges="keyboardHidden|screenSize|orientation"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-        <activity
-            android:name="com.aiming.mdt.adt.interactive.InteractiveActivity"
-            android:configChanges="keyboardHidden|screenSize|orientation"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-        <activity
-            android:name="com.aiming.mdt.adt.AdtActivity"
-            android:configChanges="keyboardHidden|screenSize"
-            android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Mopub 9.0崩溃适配 -->
-        <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" />
-
-
         <activity android:name="com.inmobi.ads.rendering.InMobiAdActivity"
             android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize" 
             android:theme="@android:style/Theme.Translucent.NoTitleBar" 
             android:hardwareAccelerated="true" />
-
 
         <activity
             android:name="com.unity3d.services.ads.adunit.AdUnitActivity"
