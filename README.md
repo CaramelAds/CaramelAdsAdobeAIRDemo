@@ -12,7 +12,7 @@ Version 9.18.0
 
 ### <a id="plugin-build-for"> Plubin build for 
 
-- Adobe AIR 32
+- Adobe AIR 33
 
 ## <a id="installation"> Installation
 1) Download file [Caramel.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/Caramel.ane "Caramel.ane")  in your project's extensions folder 
@@ -122,7 +122,7 @@ Version 9.18.0
 
 ### <a id="plugin-build-for"> Плагин собран для 
 
-- Adobe AIR 32
+- Adobe AIR 33
 
 ## <a id="installation"> Установка
 1) Скачайте файл [Caramel.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/Caramel.ane "Caramel.ane") в папку для расширений вашего проекта
