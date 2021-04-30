@@ -3,8 +3,13 @@
 
 
 	<id>com.networks.all</id>
+	 <!-- <id>com.caramelads.only</id> -->
+	 <!-- <id>com.unityads.only</id>  -->
+	 <!-- <id>com.mopub.only</id> -->
+	 <!-- <id>com.admob.only</id>	  -->
+	 <!-- <id>com.inmobi.only</id> -->
 	 
-	 
+	
 
 	<!-- Used as the filename for the application. Required. -->
 	<filename>CaramelAdsAdobeAIRDemo</filename>
@@ -263,6 +268,19 @@
             android:configChanges="keyboardHidden|orientation|screenSize" />
 
 
+        <!-- Smaato Activities portrait. -->
+
+        <activity android:name="com.smaato.soma.interstitial.InterstitialActivity"
+            android:resizeableActivity="false" android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.smaato.soma.video.VASTAdActivity"
+            android:resizeableActivity="false" android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.smaato.soma.ExpandedBannerActivity"
+            android:resizeableActivity="false" android:screenOrientation="portrait" >
+        </activity>
+
+
         <!-- adt ads-->
 
         <activity
@@ -294,10 +312,28 @@
 
         <!--inmobi-->
 
-		<activity android:name="com.inmobi.ads.rendering.InMobiAdActivity"
-			android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize" 
-			android:theme="@android:style/Theme.Translucent.NoTitleBar" 
-			android:hardwareAccelerated="true" />
+
+<activity android:name="com.inmobi.ads.rendering.InMobiAdActivity" 		android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize" 
+	android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+	android:hardwareAccelerated="true" />
+
+    
+
+		<!-- criteo ads-->
+		<activity android:name="com.criteo.publisher.CriteoInterstitialActivity" />
+
+		<!-- startapp ads-->
+		<activity android:theme="@android:style/Theme.Translucent" android:name="com.startapp.sdk.adsbase.consent.ConsentActivity" android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"/>
+        <activity android:theme="@android:style/Theme" android:name="com.startapp.sdk.ads.list3d.List3DActivity"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.startapp.sdk.adsbase.activities.OverlayActivity" android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"/>
+        <activity android:theme="@android:style/Theme" android:name="com.startapp.sdk.adsbase.activities.FullScreenActivity" android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"/>
+        <service android:name="com.startapp.sdk.adsbase.InfoEventService"/>
+        <service android:name="com.startapp.sdk.adsbase.PeriodicJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:name="com.startapp.sdk.adsbase.remoteconfig.BootCompleteListener">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
 
 
         <!-- unity ads-->
