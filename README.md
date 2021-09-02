@@ -2,7 +2,7 @@ ENG version / RUS версия ниже
 
 ENG VERSION
 
-# Caramel Adobe Air extension. 
+# Caramel Adobe Air extension.
 
 Version 9.18.0
 
@@ -10,13 +10,14 @@ Version 9.18.0
 
 - Android
 
-## <a id="plugin-build-for"> Plubin build for 
+## <a id="plugin-build-for"> Plubin build for
 
 - Adobe AIR 33
 
-## <a id="installation"> Installation
-1) Download file [Caramel.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/Caramel.ane "Caramel.ane")  in your project's extensions folder 
-     
+## <a id="installation 32/64 bit"> Installation
+1) Download file [Caramel32.ane] to build 32bit application for armv7 (https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/Caramel32.ane "Caramel32.ane")  in your project's extensions folder.
+Download file [Caramel64.ane] to build 64bit application for armv8 (https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/Caramel64.ane "Caramel64.ane")  in your project's extensions folder
+
 2) Add ANE in your project and ensure that your IDE sees it.
 
 If following hasn't been added automatically, then add it in APP_NAME-app.xml
@@ -49,7 +50,7 @@ and add following code in it
 
         <activity android:name="com.caramelads.internal.consent.PartnersActivity"
             android:screenOrientation="portrait" />
-        
+
         <activity android:name="com.caramelads.CaramelAdsActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
@@ -59,7 +60,7 @@ and add following code in it
         <activity android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
-    
+
         <activity
             android:name="com.mopub.mobileads.MoPubActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />
@@ -77,8 +78,8 @@ and add following code in it
             android:configChanges="keyboardHidden|orientation|screenSize" />
 
         <activity android:name="com.inmobi.ads.rendering.InMobiAdActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize" 
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:hardwareAccelerated="true" />
 
         <activity
@@ -102,7 +103,7 @@ and add following code in it
             android:hardwareAccelerated="false"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
     </application>
-   
+
  ```
 
 # Methods of Caramel class
@@ -110,14 +111,14 @@ and add following code in it
 ## <a id="installation"> Methods for loading and initialize Sdk
     initialize() - needs to called at first beginning, this method prepare Sdk to work
     cache() - caching ads method, caching is a long runtime procedure and should be monitored by event listeners
-    show() - showing ads method if was previously loaded with the cache() method 
+    show() - showing ads method if was previously loaded with the cache() method
 
 ## <a id="installation"> Status check methods
     The methods you can be called at any time, used in a timer or loop like "for", "while" to track the status of a ads, or check ready status of Sdk
 
     isSdkReady() - returns true if Sdk is ready to run
     isSdkFailed() - returns true if errors occurred in Sdk
-    isAdLoaded() - returns true if the ad was loaded by the cache() method 
+    isAdLoaded() - returns true if the ad was loaded by the cache() method
     isAdOpened() - returns true if the ad was shown using the show() method
     isAdClicked() - returns true if there was a click on the displayed ad
     isAdClosed() -  returns true if the ad was closed by the close button
@@ -127,18 +128,18 @@ and add following code in it
     For each event listener, you can set your own method that will be executed after the event corresponding to the listener has occurred
 
     "onSdkReady" - calls the specified method when the Sdk is ready to run
-    "onSdkFailed" - calls the specified method when errors occur in Sdk 
+    "onSdkFailed" - calls the specified method when errors occur in Sdk
     "onAdLoaded" - calls the specified method when the ad has been loaded by the cache()
     "onAdOpened" - calls the specified method when the ad has been shown with the show()
     "onAdClicked" - calls the specified method when there was a click on the displayed ad
-    "onAdClosed" - calls the specified method when the ad was closed by the close button 
-    "onAdFailed" - calls the specified method when an error occurs during ad serving 
+    "onAdClosed" - calls the specified method when the ad was closed by the close button
+    "onAdFailed" - calls the specified method when an error occurs during ad serving
 
 ========================================================================================================================================
 
 RUS VERSION
 
-# Caramel Adobe Air extension 
+# Caramel Adobe Air extension
 
 Version 9.18.0
 
@@ -147,12 +148,13 @@ Version 9.18.0
 - Android
 
 
-## <a id="plugin-build-for"> Плагин собран для 
+## <a id="plugin-build-for"> Плагин собран для
 
 - Adobe AIR 33
 
 ## <a id="installation"> Установка
-1) Скачайте файл [Caramel.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/Caramel.ane "Caramel.ane") в папку для расширений вашего проекта
+1) Скачайте файл [Caramel32.ane] для сборки 32 разрядных приложений под архитектуру armv7(https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/Caramel32.ane "Caramel32.ane") в папку для расширений вашего проекта.
+Скачайте файл [Caramel64.ane] для сборки 64 разрядных приложений под архитектуру armv8(https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/Caramel64.ane "Caramel64.ane") в папку для расширений вашего проекта.
 
 2) Добавьте ANE в ваш проект и убедитесь, что ваша IDE видит его.
 
@@ -191,7 +193,7 @@ Version 9.18.0
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
         <meta-data android:name="com.google.android.gms.version" android:value="12451000"/>
-    
+
         <!--Include the AdActivity configChanges and theme. -->
         <activity android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
@@ -214,8 +216,8 @@ Version 9.18.0
             android:configChanges="keyboardHidden|orientation|screenSize" />
 
         <activity android:name="com.inmobi.ads.rendering.InMobiAdActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize" 
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:hardwareAccelerated="true" />
 
         <activity
@@ -239,7 +241,7 @@ Version 9.18.0
             android:hardwareAccelerated="false"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
     </application>
-   
+
  ```
 
 # Методы класса Caramel
@@ -271,5 +273,3 @@ Version 9.18.0
     "onAdClicked" - вызывает указанный метод когда был клик по показанной рекламе
     "onAdClosed" - вызывает указанный метод когда реклама была закрыта по кнопке закрытия
     "onAdFailed" - вызывает указанный метод когда во время показа рекламы возникла ошибка
-
-
