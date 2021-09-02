@@ -15,7 +15,7 @@ Version 9.18.0
 - Adobe AIR 33
 
 ## <a id="installation 32/64 bit"> Installation
-1) Download file [Caramel32.ane] to build 32bit application for armv7 (https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/Caramel32.ane "Caramel32.ane")  in your project's extensions folder.
+1) Download file [Caramel32.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/Caramel32.ane "Caramel32.ane")  in your project's extensions folder.
 Download file [Caramel64.ane] to build 64bit application for armv8 (https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/Caramel64.ane "Caramel64.ane")  in your project's extensions folder
 
 2) Add ANE in your project and ensure that your IDE sees it.
