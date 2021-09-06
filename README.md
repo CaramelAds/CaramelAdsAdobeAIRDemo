@@ -153,8 +153,8 @@ Version 9.18.0
 - Adobe AIR 33
 
 ## <a id="installation"> Установка
-1) Скачайте файл [Caramel32.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/Caramel32.ane "Caramel32.ane") в папку для расширений вашего проекта для сборки 32 разрядных приложений под архитектуру armv7.
-Скачайте файл [Caramel64.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/Caramel64.ane "Caramel64.ane") в папку для расширений вашего проекта для сборки 64 разрядных приложений под архитектуру armv8.
+1) Скачайте файл [Caramel32.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/AIRDemo_32bit/Caramel32.ane "Caramel32.ane") в папку для расширений вашего проекта для сборки 32 разрядных приложений под архитектуру armv7.
+Скачайте файл [Caramel64.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/AIRDemo_64bit/Caramel64.ane "Caramel64.ane") в папку для расширений вашего проекта для сборки 64 разрядных приложений под архитектуру armv8.
 
 2) Добавьте ANE в ваш проект и убедитесь, что ваша IDE видит его.
 
