@@ -6,11 +6,11 @@ Version 9.18.0
 
 3. Add ANE in your project and ensure that your IDE sees it. If following hasn't been added automatically, then add it in APP_NAME-app.xml
     
-    ...
+    ```
     <extensions>
             <extensionID>com.caramelads.carameladsextension</extensionID>
     </extensions>
-    ...
+    ```
 
 4. Seek this section in APP_NAME-app.xml
     ...
