@@ -7,11 +7,11 @@ Download file [Caramel64.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDe
 2. Add ANE in your project and ensure that your IDE sees it.
 
 If following hasn't been added automatically, then add it in APP_NAME-app.xml
-```
-<extensions>
-        <extensionID>com.caramelads.carameladsextension</extensionID>
-</extensions>
-```
+    ...
+    <extensions>
+            <extensionID>com.caramelads.carameladsextension</extensionID>
+    </extensions>
+    ...
 
 3) Seek this section in APP_NAME-app.xml
 ```
