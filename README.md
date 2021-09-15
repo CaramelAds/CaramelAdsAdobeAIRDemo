@@ -128,45 +128,28 @@ Version 9.18.0
     "onAdClicked" - calls the specified method when there was a click on the displayed ad
     "onAdClosed" - calls the specified method when the ad was closed by the close button
     "onAdFailed" - calls the specified method when an error occurs during ad serving
+# Thank you for use our product!
 
-========================================================================================================================================
+# RUS
+## Как использовать:
+1. Скачайте файл [Caramel32.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/AIRDemo_32bit/Caramel32.ane "Caramel32.ane") в папку для расширений вашего проекта для сборки 32 разрядных приложений под архитектуру armv7.
+2. Скачайте файл [Caramel64.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/AIRDemo_64bit/Caramel64.ane "Caramel64.ane") в папку для расширений вашего проекта для сборки 64 разрядных приложений под архитектуру armv8.
 
-RUS VERSION
-
-# Caramel Adobe Air extension
-
-Version 9.18.0
-
-## <a id="supported-platforms"> Поддерживаемые платформы
-
-- Android
-
-
-## <a id="plugin-build-for"> Плагин собран для
-
-- Adobe AIR 33
-
-## <a id="installation"> Установка
-1) Скачайте файл [Caramel32.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/AIRDemo_32bit/Caramel32.ane "Caramel32.ane") в папку для расширений вашего проекта для сборки 32 разрядных приложений под архитектуру armv7.
-Скачайте файл [Caramel64.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/AIRDemo_64bit/Caramel64.ane "Caramel64.ane") в папку для расширений вашего проекта для сборки 64 разрядных приложений под архитектуру armv8.
-
-2) Добавьте ANE в ваш проект и убедитесь, что ваша IDE видит его.
-
-Если следующее не было добавлено автоматически, то добавьте это в APP_NAME-app.xml
-```
-<extensions>
-        <extensionID>com.caramelads.carameladsextension</extensionID>
-</extensions>
-```
-3) в файле APP_NAME-app.xml найдите секцию
-
-```
-<android>
-   <manifestAdditions><![CDATA[
-```
-и добавьте следующий код в эту секцию
-
-```
+3. Добавьте ANE в ваш проект и убедитесь, что ваша IDE видит его. Если следующее не было добавлено автоматически, то добавьте это в APP_NAME-app.xml
+    ```
+    <extensions>
+            <extensionID>com.caramelads.carameladsextension</extensionID>
+    </extensions>
+    ```
+4. В файле APP_NAME-app.xml найдите секцию
+    
+    ```
+    <android>
+       <manifestAdditions><![CDATA[
+    ```
+    и добавьте следующий код в эту секцию
+    
+    ```
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -191,7 +174,7 @@ Version 9.18.0
         <!--Include the AdActivity configChanges and theme. -->
         <activity android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-            android:theme="@android:style/Theme.Translucent" />        
+            android:theme="@android:style/Theme.Translucent" />
 
         <activity
             android:name="com.mopub.mobileads.MoPubActivity"
@@ -236,16 +219,26 @@ Version 9.18.0
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
     </application>
 
- ```
+     ```    
+    
+## Поддерживаемые платформы
+
+- Android ARM 32
+- Android ARM 64
+
+
+## Плагин собран для
+
+- Adobe AIR 33
 
 # Методы класса Caramel
 
-## <a id="installation"> Методы загрузки и инициализации
+## Методы загрузки и инициализации
     initialize() - необходимо вызывать в самом начале, подготавливает Sdk
     cache() - кэщирование рекламы, это метод длительного времени выполнения, поэтому его следует отслеживать прослушивателями событий
     show() - показ рекламы если она была предварительно загружена методом cache()
 
-## <a id="installation"> Методы проверки состояния
+## Методы проверки состояния
     Перечисленные ниже методы можно вызвать в любой момент времени, использовать в таймере или цикле для отслеживания состояния рекдамы или
     загрузхки Sdk
 
@@ -257,7 +250,7 @@ Version 9.18.0
     isAdClosed() -  возвращает true если реклама была закрыта по кнопке закрытия
     isAdFailed() -  возвращает true если во время показа рекламы возникла ошибка
 
-## <a id="installation"> Слушатели событий
+## Слушатели событий
     На каждый слушатель события можно установить свой метод который бьудет выполнен после того как произхойдет событие соотвествующее слушателю
 
     "onSdkReady" - вызывает указанный метод когда Sdk готов к работе
@@ -267,3 +260,5 @@ Version 9.18.0
     "onAdClicked" - вызывает указанный метод когда был клик по показанной рекламе
     "onAdClosed" - вызывает указанный метод когда реклама была закрыта по кнопке закрытия
     "onAdFailed" - вызывает указанный метод когда во время показа рекламы возникла ошибка
+    
+# Спасибо, что используете наш продукт!
