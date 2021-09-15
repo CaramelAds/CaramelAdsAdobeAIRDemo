@@ -1,24 +1,10 @@
-ENG version / RUS версия ниже
-
-ENG VERSION
-
-# Caramel Adobe Air extension.
-
 Version 9.18.0
-
-## <a id="supported-platforms"> Supported platforms
-
-- Android
-
-## <a id="plugin-build-for"> Plubin build for
-
-- Adobe AIR 33
-
-## <a id="installation 32/64 bit"> Installation
-1) Download file [Caramel32.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/AIRDemo_32bit/Caramel32.ane "Caramel32.ane")  in your project's extensions folder to build 32bit application for armv7.
+## ENG ( RUS version below )
+## How to use:
+1. Download file [Caramel32.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/AIRDemo_32bit/Caramel32.ane "Caramel32.ane")  in your project's extensions folder to build 32bit application for armv7.
 Download file [Caramel64.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/AIRDemo_64bit/Caramel64.ane "Caramel64.ane") in your project's extensions folder to build 64bit application for armv8.
 
-2) Add ANE in your project and ensure that your IDE sees it.
+2. Add ANE in your project and ensure that your IDE sees it.
 
 If following hasn't been added automatically, then add it in APP_NAME-app.xml
 ```
@@ -105,6 +91,19 @@ and add following code in it
     </application>
 
  ```
+
+
+
+## <a id="supported-platforms"> Supported platforms
+
+- Android
+
+## <a id="plugin-build-for"> Plubin build for
+
+- Adobe AIR 33
+
+## <a id="installation 32/64 bit"> Installation
+
 
 # Methods of Caramel class
 
