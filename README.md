@@ -13,12 +13,12 @@ Version 9.18.0
     ```
 
 4. Seek this section in APP_NAME-app.xml
-    ...
+    ```
     <android>
        <manifestAdditions><![CDATA[
-    ...
+    ```
 and add following code in it
-    ....
+    ```
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -88,7 +88,7 @@ and add following code in it
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
     </application>
 
-     ...
+     ```
 
 
 
