@@ -91,27 +91,23 @@ Version 9.18.0
 
      ```
 
+## Supported platforms
 
+- Android ARM 32
+- Android ARM 64
 
-## <a id="supported-platforms"> Supported platforms
-
-- Android
-
-## <a id="plugin-build-for"> Plubin build for
+## Plugin build for
 
 - Adobe AIR 33
 
-## <a id="installation 32/64 bit"> Installation
-
-
 # Methods of Caramel class
 
-## <a id="installation"> Methods for loading and initialize Sdk
+## Methods for loading and initialize Sdk
     initialize() - needs to called at first beginning, this method prepare Sdk to work
     cache() - caching ads method, caching is a long runtime procedure and should be monitored by event listeners
     show() - showing ads method if was previously loaded with the cache() method
 
-## <a id="installation"> Status check methods
+## Status check methods
     The methods you can be called at any time, used in a timer or loop like "for", "while" to track the status of a ads, or check ready status of Sdk
 
     isSdkReady() - returns true if Sdk is ready to run
@@ -122,7 +118,7 @@ Version 9.18.0
     isAdClosed() -  returns true if the ad was closed by the close button
     isAdFailed() -  returns true if an error occurred during ad serving
 
-## <a id="installation"> Event listeners
+## Event listeners
     For each event listener, you can set your own method that will be executed after the event corresponding to the listener has occurred
 
     "onSdkReady" - calls the specified method when the Sdk is ready to run
