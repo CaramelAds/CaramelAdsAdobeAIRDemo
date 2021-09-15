@@ -17,7 +17,8 @@ Version 9.18.0
     <android>
        <manifestAdditions><![CDATA[
     ```
-and add following code in it
+    and add following code in it
+    
     ```
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
