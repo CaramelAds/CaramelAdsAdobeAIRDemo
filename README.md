@@ -2,9 +2,9 @@ Version 9.18.0
 ## ENG ( RUS version below )
 ## How to use:
 1. Download file [Caramel32.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/AIRDemo_32bit/Caramel32.ane "Caramel32.ane")  in your project's extensions folder to build 32bit application for armv7.
-Download file [Caramel64.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/AIRDemo_64bit/Caramel64.ane "Caramel64.ane") in your project's extensions folder to build 64bit application for armv8.
+2. Download file [Caramel64.ane](https://github.com/CaramelAds/CaramelAdsAdobeAIRDemo/blob/master/AIRDemo_64bit/Caramel64.ane "Caramel64.ane") in your project's extensions folder to build 64bit application for armv8.
 
-2. Add ANE in your project and ensure that your IDE sees it.
+3. Add ANE in your project and ensure that your IDE sees it.
 
 If following hasn't been added automatically, then add it in APP_NAME-app.xml
     ...
@@ -13,14 +13,13 @@ If following hasn't been added automatically, then add it in APP_NAME-app.xml
     </extensions>
     ...
 
-3) Seek this section in APP_NAME-app.xml
-```
-<android>
-   <manifestAdditions><![CDATA[
-```
+4. Seek this section in APP_NAME-app.xml
+    ...
+    <android>
+       <manifestAdditions><![CDATA[
+    ...
 and add following code in it
-
-```
+    ....
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -90,7 +89,7 @@ and add following code in it
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
     </application>
 
- ```
+     ...
 
 
 
